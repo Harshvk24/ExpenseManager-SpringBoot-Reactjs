@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem; /* Smaller font size */
+  margin-bottom: 20px;
+}
+
+/* Expense List */
+h2, h3 {
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1.5rem; /* Adjusted font size */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li strong {
+  color: #2c3e50;
+  font-size: 1.1rem; /* Slightly smaller font size */
+}
+
+ul li span {
+  color: #27ae60;
+}
+
+/* Add Expense Form */
+form {
+  display: grid;
+  grid-gap: 15px;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+form button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Expenses by Month */
+.month-expenses {
+  margin-top: 20px;
+}
+
+.month-expenses ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.month-expenses li {
+  background-color: #eaf2f8;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.month-expenses li strong {
+  font-size: 1.1rem;
+  color: #2980b9;
+}
+
+.month-expenses li span {
+  font-weight: bold;
+  color: #e74c3c;
+}
